@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPT-like Chat Interface</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}">
 </head>
 <body>
-    
+  <div id="chat-container">
+    <div id="chat-box">
+      <div id="messages"></div>
+    </div>
+    <div id="input-container">
+      <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off">
+      <button id="send-button">Send</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
